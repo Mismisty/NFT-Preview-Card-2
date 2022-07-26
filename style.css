@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html body {
+    min-height: 100vh;
+}
+ body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    background-color: hsl(217, 54%, 11%);
+    
+ }
+
+.container {
+    width: 310px;
+    height: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+}
+
+.dice {
+    display: flex;
+}
+
+.dice img {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 25px;
+    
+}
+
+p {
+    margin-left: 25px;
+    margin-top: 15px;
+    line-height: 1.5;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+
+}
+
+.diamond {
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.cyan {
+    color: hsl(178, 100%, 50%);
+    
+   
+}
+
+.white {
+    color: hsl(0, 0%, 100%);
+}
+
+.clock, span {  
+   margin-right: 15px;
+   color: hsl(215, 51%, 70%);
+
+}
+
+.clock {
+    float: right
+}
+
+hr {
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: hsl(215, 32%, 27%);
+}
+
+
+
+footer img {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+footer span {
+    float: right;
+    margin-right: 40px;
+    margin-top: 15px;
+    color: hsl(215, 51%, 70%);
+}
+
+footer span .white {
+    margin-top: -1px;
+    margin-left: 5px;
+}
+
+
+
+h1:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.white:hover {
+    color: hsl(178, 100%, 50%);
+}
+.dice {
+    position: relative;
+    width: 250px;
+    height: auto;
+}
+
+/*.dice {
+    position: relative;
+
+}*/
+
+.dice img.image-hover {
+    position: absolute;
+    align-items: center;
+    right: 60%;
+    left: 40%;
+    top: 35%;
+    bottom: 55%;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity .2s;
+}
+.dice:hover img.image-hover {
+    opacity: 1; 
+}
+/*for the background-color on hover*/
+
+.overlay {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    left: 28px;
+    bottom: 0;
+    width: 250px;
+    opacity: 0;
+    transition: .5s;
+    border-radius: 10px;
+    background-color: hsl(178, 100%, 50%);
+}
+.dice:hover .overlay {
+    opacity: .5;
+    
+}
+
+.attribution {
+    margin-top: -15px;
+}
